@@ -1374,6 +1374,28 @@ a.task-card:hover {
 .wl-message.success { color: var(--green); }
 .wl-message.error { color: #c0392b; }
 
+/* Disabled form elements */
+.wl-form input:disabled {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(163, 216, 74, 0.3);
+  color: rgba(28, 43, 18, 0.5);
+  cursor: not-allowed;
+}
+
+.wl-form .input-wrap:has(input:disabled) {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(163, 216, 74, 0.3);
+}
+
+.wl-form button:disabled {
+  background-color: rgba(163, 216, 74, 0.4);
+  border-color: rgba(28, 43, 18, 0.3);
+  color: rgba(28, 43, 18, 0.5);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
 /* ==============================
    FAQ SECTION
    ============================== */

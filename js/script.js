@@ -189,6 +189,21 @@ const form = document.getElementById("wl-form");
 const messageEl = document.getElementById("wl-message");
 const WALLET_REGEX = /^0x[a-fA-F0-9]{40}$/;
 
+// Form lock logic
+const confirmCheckbox = document.getElementById("confirm-tasks");
+const xUsernameInput = document.getElementById("x-username");
+const walletInput = document.getElementById("wallet");
+const submitBtn = document.getElementById("wl-submit");
+
+if (confirmCheckbox) {
+  confirmCheckbox.addEventListener("change", (e) => {
+    const isChecked = e.target.checked;
+    if (xUsernameInput) xUsernameInput.disabled = !isChecked;
+    if (walletInput) walletInput.disabled = !isChecked;
+    if (submitBtn) submitBtn.disabled = !isChecked;
+  });
+}
+
 // Generate or retrieve a persistent device fingerprint stored in localStorage
 function getDeviceId() {
   const KEY = "chilliens-device-id";
