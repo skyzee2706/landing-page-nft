@@ -175,13 +175,17 @@ const postTask = document.getElementById("task-post");
 if (postTask) postTask.href = TWEET_URL;
 
 document.querySelectorAll(".task-card[id]").forEach((card) => {
-  const key = "chilliens-" + card.id;
-  if (localStorage.getItem(key) === "done") card.classList.add("completed");
-
   card.addEventListener("click", () => {
-    localStorage.setItem(key, "done");
     card.classList.add("completed");
   });
+});
+
+// Force reset checkbox and lock form on page load (so it resets on refresh)
+window.addEventListener("DOMContentLoaded", () => {
+  const confirmCheckbox = document.getElementById("confirm-tasks");
+  const form = document.getElementById("wl-form");
+  if (form) form.reset(); // clear inputs
+  if (confirmCheckbox) confirmCheckbox.checked = false; // uncheck
 });
 
 // ── WHITELIST FORM ───────────────────────────
