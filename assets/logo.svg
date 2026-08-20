@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="ChilliensNFT alien logo">
+  <rect width="400" height="400" fill="#a3d84a"/>
+  <line x1="160" y1="90" x2="140" y2="45" stroke="#1c2b12" stroke-width="9" stroke-linecap="round"/>
+  <line x1="240" y1="90" x2="260" y2="45" stroke="#1c2b12" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="140" cy="40" r="13" fill="#8fd13f" stroke="#1c2b12" stroke-width="8"/>
+  <circle cx="260" cy="40" r="13" fill="#8fd13f" stroke="#1c2b12" stroke-width="8"/>
+  <ellipse cx="200" cy="200" rx="140" ry="105" fill="#8fd13f" stroke="#1c2b12" stroke-width="9"/>
+  <ellipse cx="160" cy="185" rx="34" ry="42" fill="#141b0e"/>
+  <ellipse cx="248" cy="185" rx="34" ry="42" fill="#141b0e"/>
+  <circle cx="148" cy="168" r="10" fill="#ffffff"/>
+  <circle cx="236" cy="168" r="10" fill="#ffffff"/>
+  <path d="M170 245 Q200 268 230 245" fill="none" stroke="#1c2b12" stroke-width="8" stroke-linecap="round"/>
+  <path d="M188 250 Q200 285 212 252 Q200 300 188 250 Z" fill="#ef7a9a" stroke="#1c2b12" stroke-width="4"/>
+</svg>

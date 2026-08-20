@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="UFO">
+  <ellipse cx="100" cy="70" rx="90" ry="16" fill="#e7dcb8" stroke="#1c2b12" stroke-width="4"/>
+  <path d="M55 65 Q100 10 145 65 Z" fill="#8fd13f" stroke="#1c2b12" stroke-width="4"/>
+  <ellipse cx="100" cy="45" rx="26" ry="18" fill="#cdeeb0" stroke="#1c2b12" stroke-width="3" opacity="0.9"/>
+  <circle cx="60" cy="70" r="6" fill="#ef7a9a" stroke="#1c2b12" stroke-width="2"/>
+  <circle cx="100" cy="74" r="6" fill="#f6d259" stroke="#1c2b12" stroke-width="2"/>
+  <circle cx="140" cy="70" r="6" fill="#5bc8e0" stroke="#1c2b12" stroke-width="2"/>
+  <path d="M70 82 L55 110" stroke="#f6d259" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M100 84 L100 115" stroke="#f6d259" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M130 82 L145 110" stroke="#f6d259" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

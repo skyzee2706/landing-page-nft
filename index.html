@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chilliens — 4,444 Chill Aliens on Robinhood Chain</title>
+<meta name="description" content="Chilliens is a collection of 4,444 unique Chill Aliens on Robinhood Chain. 100% of creator fees go to a Sweep, Burn & Giveaway mechanism. Collect. Trade. Stay Chill.">
+<meta property="og:title" content="Chilliens — 4,444 Chill Aliens on Robinhood Chain">
+<meta property="og:description" content="4,444 unique aliens. 50% Sweep & Burn. 50% Community Giveaway. A self-sustaining NFT ecosystem.">
+<meta property="og:image" content="assets/chillien.png">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="starfield" aria-hidden="true"></canvas>
+
+<img src="assets/ufo.svg" alt="" class="floating-ufo ufo-1" aria-hidden="true">
+<img src="assets/ufo.svg" alt="" class="floating-ufo ufo-2" aria-hidden="true">
+<img src="assets/ufo.svg" alt="" class="floating-ufo ufo-3" aria-hidden="true">
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <img src="assets/logo.svg" alt="Chilliens logo" class="brand-logo">
+      <span>Chilliens</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">About</a>
+      <a href="#collection">Collection</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#mint">Mint</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-right">
+      <a href="https://twitter.com/ChilliensNFT" target="_blank" rel="noopener" class="btn btn-ghost header-x">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Follow on X
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">👽 Built on Robinhood Chain</p>
+      <h1>Chillien<span class="accent">s</span></h1>
+      <p class="hero-sub">A collection of <strong>4,444 unique Chill Aliens</strong>. Collect. Trade. Stay Chill. 100% of Creator Fees fuel the Sweep, Burn & Giveaway cycle — forever.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="4444">0</span>
+          <span class="stat-label">Total Supply</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num-text">FREE</span>
+          <span class="stat-label">GTD Mint</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num-text">~2,500</span>
+          <span class="stat-label">Target Supply</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#mint" class="btn btn-primary">View Mint Info 🛸</a>
+        <a href="#ecosystem" class="btn btn-outline">How It Works</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-glow"></div>
+      <div class="hero-nft-card">
+        <img src="assets/chillien.png" alt="Chillien #001" class="hero-nft-img">
+        <div class="hero-nft-badge">
+          <span class="badge-dot"></span>
+          <span>Live Preview</span>
+        </div>
+        <div class="hero-nft-meta">
+          <span class="nft-name">Chillien #001</span>
+          <span class="nft-trait">🔥 Legendary</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-arrow"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about reveal">
+  <div class="container about-grid">
+    <div class="about-text">
+      <span class="badge">The Alien Story</span>
+      <h2>Who Are the Chilliens?</h2>
+      <p>Chilliens is a collection of <strong>4,444 unique Chill Aliens</strong> built on <strong>Robinhood Chain</strong>. More than a collectible — it's an ecosystem where NFT holders participate through a self-sustaining sweep, burn, and giveaway mechanism driven purely by trading activity.</p>
+      <p>Every Chillian has its own identity, personality, and appearance — generated from a wide set of traits including alien colors, backgrounds, eyes, mouths, headwear, necklaces, and accessories.</p>
+      <div class="about-tagline">
+        <span class="tagline-item">Collect a Chillian.</span>
+        <span class="tagline-sep">·</span>
+        <span class="tagline-item">Trade your Chillian.</span>
+        <span class="tagline-sep">·</span>
+        <span class="tagline-item">Stay Chill.</span>
+      </div>
+      <div class="trait-pills">
+        <span class="pill">👾 Alien Colors</span>
+        <span class="pill">🌌 Backgrounds</span>
+        <span class="pill">👁️ Eyes</span>
+        <span class="pill">👄 Mouths</span>
+        <span class="pill">🎩 Headwear</span>
+        <span class="pill">💎 Necklaces</span>
+        <span class="pill">⚔️ Accessories</span>
+      </div>
+    </div>
+    <div class="about-card">
+      <img src="assets/chillien.png" alt="Chillien alien" class="about-card-img">
+      <div class="about-card-ribbon">Rare 🌟</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COLLECTION PREVIEW ===== -->
+<section id="collection" class="collection reveal">
+  <div class="container">
+    <span class="badge badge-center">NFT Collection</span>
+    <h2 class="section-title">Collection Preview</h2>
+    <p class="section-sub">A small glimpse of the 4,444 Chilliens dropping on Robinhood Chain. Every single piece is 100% unique.</p>
+    <div class="nft-grid">
+      <div class="nft-card" data-rarity="Legendary">
+        <div class="nft-card-img-wrap">
+          <img src="assets/chillien.png" alt="Chillien #001">
+          <div class="nft-overlay">
+            <span class="nft-rarity legendary">Legendary</span>
+          </div>
+        </div>
+        <div class="nft-card-info">
+          <span class="nft-id">#001</span>
+        </div>
+      </div>
+      <div class="nft-card" data-rarity="Rare">
+        <div class="nft-card-img-wrap nft-hue-1">
+          <img src="assets/chillien.png" alt="Chillien #042">
+          <div class="nft-overlay">
+            <span class="nft-rarity rare">Rare</span>
+          </div>
+        </div>
+        <div class="nft-card-info">
+          <span class="nft-id">#042</span>
+        </div>
+      </div>
+      <div class="nft-card" data-rarity="Epic">
+        <div class="nft-card-img-wrap nft-hue-2">
+          <img src="assets/chillien.png" alt="Chillien #069">
+          <div class="nft-overlay">
+            <span class="nft-rarity epic">Epic</span>
+          </div>
+        </div>
+        <div class="nft-card-info">
+          <span class="nft-id">#069</span>
+        </div>
+      </div>
+      <div class="nft-card" data-rarity="Common">
+        <div class="nft-card-img-wrap nft-hue-3">
+          <img src="assets/chillien.png" alt="Chillien #123">
+          <div class="nft-overlay">
+            <span class="nft-rarity common">Common</span>
+          </div>
+        </div>
+        <div class="nft-card-info">
+          <span class="nft-id">#123</span>
+        </div>
+      </div>
+    </div>
+    <p class="collection-note">+ 4,440 more Chilliens will be revealed at mint 🛸</p>
+  </div>
+</section>
+
+<!-- ===== ECOSYSTEM MECHANIC ===== -->
+<section id="ecosystem" class="ecosystem reveal">
+  <div class="container">
+    <span class="badge badge-center">Core Mechanic</span>
+    <h2 class="section-title">The Chilliens Flywheel</h2>
+    <p class="section-sub">100% of Creator Fees from secondary-market trading fuel a dual loop: deflationary burns and community giveaways — forever.</p>
+
+    <!-- Flow diagram -->
+    <div class="flow-diagram">
+      <div class="flow-step">
+        <div class="flow-icon">🔄</div>
+        <h3>NFT Trading</h3>
+        <p>Chilliens are actively traded on marketplaces.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <div class="flow-icon">💰</div>
+        <h3>Creator Fees</h3>
+        <p>Every trade generates 100% redirected Creator Fees.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-split">
+        <div class="flow-step split-left">
+          <div class="flow-icon burn-icon">🔥</div>
+          <span class="split-pct">50%</span>
+          <h3>Sweep & Burn</h3>
+          <p>NFTs are swept from the floor and permanently burned, reducing supply.</p>
+        </div>
+        <div class="split-divider">+</div>
+        <div class="flow-step split-right">
+          <div class="flow-icon give-icon">🎁</div>
+          <span class="split-pct">50%</span>
+          <h3>Community Giveaway</h3>
+          <p>Swept NFTs are redistributed back to holders and community members.</p>
+        </div>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step flow-result">
+        <div class="flow-icon">📉</div>
+        <h3>Supply Reduction</h3>
+        <p>4,444 → target ~2,500 circulating NFTs over time.</p>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step flow-result">
+        <div class="flow-icon">🚀</div>
+        <h3>Scarcity + Activity</h3>
+        <p>Lower supply drives rarity. Giveaways drive participation. The cycle repeats.</p>
+      </div>
+    </div>
+
+    <!-- The two loops -->
+    <div class="loops-grid">
+      <div class="loop-card deflation">
+        <div class="loop-label">Deflation Loop</div>
+        <p>Higher Volume → More Fees → More Sweeps → Burns → Lower Supply → Higher Scarcity → Stronger Floor</p>
+      </div>
+      <div class="loop-card redistribution">
+        <div class="loop-label">Redistribution Loop</div>
+        <p>Fees → Giveaways → Community Rewards → Engagement → More Trading → More Fees</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROADMAP ===== -->
+<section id="roadmap" class="roadmap reveal">
+  <div class="container">
+    <span class="badge badge-center">Mission Log</span>
+    <h2 class="section-title">Roadmap</h2>
+    <p class="section-sub">Four phases. One evolving ecosystem.</p>
+    <div class="timeline">
+      <div class="timeline-item done">
+        <div class="timeline-dot"><span>✓</span></div>
+        <div class="timeline-content">
+          <span class="phase">Phase 1 — The Arrival</span>
+          <h3>Building the Ship</h3>
+          <p>Collection development, 4,444 NFT generation, trait creation, smart contract development, Robinhood Chain deployment, website launch, community building, mint preparation.</p>
+        </div>
+      </div>
+      <div class="timeline-item active">
+        <div class="timeline-dot pulse"><span>🛸</span></div>
+        <div class="timeline-content">
+          <span class="phase">Phase 2 — The Chill (Now!)</span>
+          <h3>NFT Mint & Reveal</h3>
+          <p>NFT mint goes live, full reveal of all 4,444 Chilliens, secondary-market trading activation, sweep/burn/giveaway mechanism launches, floor support system begins.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><span>3</span></div>
+        <div class="timeline-content">
+          <span class="phase">Phase 3 — The Ecosystem</span>
+          <h3>Grow & Optimize</h3>
+          <p>Expand NFT utility, holder-focused features, community events, giveaway system optimization, burn mechanics tuning, community growth initiatives.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"><span>4</span></div>
+        <div class="timeline-content">
+          <span class="phase">Phase 4 — Beyond 4,444</span>
+          <h3>The Evolving Supply</h3>
+          <p>Supply continuously decreases through burns toward ~2,500. The ecosystem evolves based on trading volume, community participation, and scarcity dynamics. New holders enter through giveaways. The cycle lives on.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COUNTDOWN ===== -->
+<section class="countdown-section reveal">
+  <div class="container">
+    <div class="countdown-card">
+      <p class="countdown-label">📅 Mint Date</p>
+      <h2 class="countdown-title">To Be Announced</h2>
+      <div class="tba-badge">🛸 Stay tuned — follow <a href="https://twitter.com/ChilliensNFT" target="_blank" rel="noopener">@ChilliensNFT</a> for the official drop date</div>
+      <div class="countdown-ctas">
+        <a href="#whitelist" class="btn btn-primary">Secure Your Whitelist Spot 🛸</a>
+        <a href="https://opensea.io/collection/chilliensnft" target="_blank" rel="noopener" class="btn btn-outline opensea-btn">
+          <img src="assets/icon-opensea.png" alt="OpenSea" width="18" height="18" style="object-fit:contain;">
+          View on OpenSea
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MINT SECTION ===== -->
+<section id="mint" class="mint-info reveal">
+  <div class="container">
+    <span class="badge badge-center">Mint Zone</span>
+    <h2 class="section-title">Mint Structure</h2>
+    <p class="section-sub">Three tiers. One collection. The ship launches soon.</p>
+    <div class="mint-tiers">
+      <div class="mint-tier gtd">
+        <div class="tier-top">
+          <span class="tier-badge">GTD</span>
+          <span class="tier-label">Guaranteed</span>
+        </div>
+        <div class="tier-price">FREE</div>
+        <p class="tier-desc">Guaranteed allocation for eligible whitelisted wallets. The best way in — secure yours now.</p>
+        <ul class="tier-perks">
+          <li>✓ Guaranteed slot</li>
+          <li>✓ Free to mint</li>
+          <li>✓ Priority access</li>
+        </ul>
+
+      </div>
+      <div class="mint-tier fcfs">
+        <div class="tier-top">
+          <span class="tier-badge">FCFS</span>
+          <span class="tier-label">First Come, First Served</span>
+        </div>
+        <div class="tier-price">0.00007 <span>ETH</span></div>
+        <p class="tier-desc">First-come, first-served allocation. Be quick — slots fill fast once the ship opens.</p>
+        <ul class="tier-perks">
+          <li>✓ Open to whitelist holders</li>
+          <li>✓ Lower price than public</li>
+          <li>✓ Fast access window</li>
+        </ul>
+
+      </div>
+      <div class="mint-tier public">
+        <div class="tier-top">
+          <span class="tier-badge">PUBLIC</span>
+          <span class="tier-label">Open Mint</span>
+        </div>
+        <div class="tier-price">0.00012 <span>ETH</span></div>
+        <p class="tier-desc">Open to everyone. No whitelist needed — but this is the highest price tier.</p>
+        <ul class="tier-perks">
+          <li>✓ No whitelist needed</li>
+          <li>✓ Open to all wallets</li>
+          <li>✓ While supply lasts</li>
+        </ul>
+
+      </div>
+    </div>
+    <p class="mint-note">📅 Mint Date: <strong>TBA</strong> — Follow <a href="https://twitter.com/ChilliensNFT" target="_blank" rel="noopener">@ChilliensNFT</a> for the announcement.</p>
+  </div>
+</section>
+
+<!-- ===== WHITELIST ===== -->
+<section id="whitelist" class="whitelist reveal">
+  <div class="container">
+    <span class="badge badge-center">GTD Whitelist</span>
+    <h2 class="section-title">Secure Your GTD Spot</h2>
+    <p class="section-sub">Complete the missions below to lock in your free Guaranteed mint slot 👇</p>
+
+    <div class="tasks">
+      <a class="task-card" id="task-follow" href="https://twitter.com/intent/follow?screen_name=ChilliensNFT" target="_blank" rel="noopener">
+        <span class="task-icon">1</span>
+        <div class="task-text">
+          <h3>Follow @ChilliensNFT on X</h3>
+          <p>Click to follow our official X (Twitter) account.</p>
+        </div>
+        <span class="task-check">✔</span>
+      </a>
+
+      <a class="task-card" id="task-post" href="#" target="_blank" rel="noopener">
+        <span class="task-icon">2</span>
+        <div class="task-text">
+          <h3>Like, RT & Comment</h3>
+          <p>Open the whitelist post, then Like, Retweet, and drop a quick comment.</p>
+        </div>
+        <span class="task-check">✔</span>
+      </a>
+
+      <div class="task-card task-static">
+        <span class="task-icon">3</span>
+        <div class="task-text">
+          <h3>Submit Your Wallet</h3>
+          <p>Enter your EVM-compatible wallet address in the form below.</p>
+        </div>
+        <span class="task-check">✔</span>
+      </div>
+    </div>
+
+    <form id="wl-form" class="wl-form" novalidate>
+      <div class="form-row">
+        <label for="x-username">X (Twitter) Username</label>
+        <div class="input-wrap">
+          <span class="input-prefix">@</span>
+          <input type="text" id="x-username" name="x-username" placeholder="yourusername" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="wallet">Wallet Address (EVM-compatible)</label>
+        <input type="text" id="wallet" name="wallet" placeholder="0x..." required>
+      </div>
+      <div class="form-row checkbox-row">
+        <label class="checkbox-label">
+          <input type="checkbox" id="confirm-tasks" required>
+          <span>I have Followed, Liked, Retweeted, and Commented on the Chilliens whitelist post</span>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="wl-submit">
+        <span class="btn-text">Submit for GTD Whitelist 🛸</span>
+        <span class="btn-loader" hidden></span>
+      </button>
+      <p id="wl-message" class="wl-message" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq reveal">
+  <div class="container">
+    <span class="badge badge-center">FAQ</span>
+    <h2 class="section-title">Got Questions?</h2>
+    <p class="section-sub">Everything you need to know about Chilliens and the ecosystem.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-question">
+          What is the total supply of Chilliens?
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>The launch supply is <strong>4,444 unique NFTs</strong>. However, through the Sweep & Burn mechanism, the effective circulating supply will continuously decrease over time — targeting approximately <strong>~2,500 NFTs</strong> as the long-term supply.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">
+          What are the mint prices?
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>There are three mint tiers:</p>
+          <ul>
+            <li><strong>GTD (Guaranteed):</strong> Free — for whitelisted wallets</li>
+            <li><strong>FCFS (First Come, First Served):</strong> 0.00007 ETH</li>
+            <li><strong>Public:</strong> 0.00012 ETH</li>
+          </ul>
+          <p>Secure a GTD whitelist spot to mint for free!</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">
+          Which blockchain is Chilliens on?
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Chilliens is built on <strong>Robinhood Chain</strong> — an EVM-compatible network. Make sure your wallet supports Robinhood Chain before minting.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">
+          How does the Sweep, Burn & Giveaway mechanic work?
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p><strong>100% of Creator Fees</strong> from secondary-market trading are split into two pools:</p>
+          <ul>
+            <li><strong>50% → Sweep & Burn:</strong> NFTs are bought from the floor and permanently burned, reducing total supply.</li>
+            <li><strong>50% → Community Giveaway:</strong> Swept NFTs are redistributed back to the community through giveaways.</li>
+          </ul>
+          <p>This creates a self-sustaining deflationary and redistributive ecosystem driven entirely by trading activity.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">
+          When does the mint open?
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>Mint date is <strong>TBA</strong>. Follow <a href="https://twitter.com/ChilliensNFT" target="_blank" rel="noopener">@ChilliensNFT</a> on X for the official announcement. The countdown on this page will update the moment it's confirmed.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">
+          What are the benefits of holding a Chillien?
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>As a holder you benefit from:</p>
+          <ul>
+            <li>Participation in the <strong>NFT Giveaway</strong> redistribution pool</li>
+            <li>Exposure to <strong>supply reduction</strong> over time as burns decrease circulating NFTs</li>
+            <li>Full trading rights on any EVM-compatible marketplace</li>
+            <li>Community events and holder-focused features in later phases</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <img src="assets/logo.svg" alt="Chilliens logo" class="brand-logo">
+          <span>Chilliens</span>
+        </a>
+        <p class="footer-tagline">4,444 Chill Aliens on Robinhood Chain. 50% Burn. 50% Giveaway. One evolving ecosystem.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#collection">Collection</a>
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#mint">Mint</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-socials">
+        <h4>Socials</h4>
+        <a href="https://twitter.com/ChilliensNFT" target="_blank" rel="noopener" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X (Twitter)
+        </a>
+        <a href="https://opensea.io/collection/chilliensnft" target="_blank" rel="noopener" class="social-link">
+          <img src="assets/icon-opensea.png" alt="OpenSea" width="18" height="18" style="object-fit:contain;">
+          OpenSea
+        </a>
+        <a href="#" class="social-link">
+          <img src="assets/icon-discord.png" alt="Discord" width="18" height="18" style="object-fit:contain;">
+          Discord
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Chilliens. Built on Robinhood Chain. Made with 👽 on Earth.</p>
+      <p class="footer-disclaimer">NFTs are not investments. Always DYOR, frens!</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>

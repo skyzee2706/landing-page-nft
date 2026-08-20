@@ -1,0 +1,10 @@
+{
+  "name": "chilliensnft-landing",
+  "version": "1.0.0",
+  "description": "Chilliens NFT Landing Page",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "googleapis": "^144.0.0"
+  }
+}

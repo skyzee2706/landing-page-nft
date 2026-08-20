@@ -1,0 +1,21 @@
+# Service Account credentials — NEVER commit this!
+chilliens-*.json
+*-service-account.json
+*-credentials.json
+service-account.json
+credentials.json
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Vercel local
+.vercel
+
+# OS files
+.DS_Store
+Thumbs.db
