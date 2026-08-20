@@ -174,39 +174,42 @@ statNums.forEach((el) => observerStats.observe(el));
 const postTask = document.getElementById("task-post");
 if (postTask) postTask.href = TWEET_URL;
 
+const xUsernameInput = document.getElementById("x-username");
+const walletInput = document.getElementById("wallet");
+const submitBtn = document.getElementById("wl-submit");
+
+function checkTasksAndUnlock() {
+  const allTasks = document.querySelectorAll(".task-card[id]");
+  const completedTasks = document.querySelectorAll(".task-card[id].completed");
+  
+  if (allTasks.length > 0 && allTasks.length === completedTasks.length) {
+    if (xUsernameInput) xUsernameInput.disabled = false;
+    if (walletInput) walletInput.disabled = false;
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      const btnText = submitBtn.querySelector(".btn-text");
+      if (btnText) btnText.textContent = "Submit for GTD Whitelist 🛸";
+    }
+  }
+}
+
 document.querySelectorAll(".task-card[id]").forEach((card) => {
   card.addEventListener("click", () => {
     card.classList.add("completed");
+    checkTasksAndUnlock();
   });
 });
 
-// Force reset checkbox and lock form on page load (so it resets on refresh)
+// Force reset form on page load (so it resets on refresh)
 window.addEventListener("DOMContentLoaded", () => {
-  const confirmCheckbox = document.getElementById("confirm-tasks");
   const form = document.getElementById("wl-form");
   if (form) form.reset(); // clear inputs
-  if (confirmCheckbox) confirmCheckbox.checked = false; // uncheck
 });
 
 // ── WHITELIST FORM ───────────────────────────
 const form = document.getElementById("wl-form");
 const messageEl = document.getElementById("wl-message");
 const WALLET_REGEX = /^0x[a-fA-F0-9]{40}$/;
-
-// Form lock logic
-const confirmCheckbox = document.getElementById("confirm-tasks");
-const xUsernameInput = document.getElementById("x-username");
-const walletInput = document.getElementById("wallet");
-const submitBtn = document.getElementById("wl-submit");
-
-if (confirmCheckbox) {
-  confirmCheckbox.addEventListener("change", (e) => {
-    const isChecked = e.target.checked;
-    if (xUsernameInput) xUsernameInput.disabled = !isChecked;
-    if (walletInput) walletInput.disabled = !isChecked;
-    if (submitBtn) submitBtn.disabled = !isChecked;
-  });
-}
 
 // Generate or retrieve a persistent device fingerprint stored in localStorage
 function getDeviceId() {
@@ -229,7 +232,6 @@ form?.addEventListener("submit", async (e) => {
   const xUsernameRaw = document.getElementById("x-username").value.trim();
   const xUsername = xUsernameRaw.replace(/^@/, "");
   const wallet = document.getElementById("wallet").value.trim();
-  const confirmed = document.getElementById("confirm-tasks").checked;
   const submitBtn = document.getElementById("wl-submit");
 
   // ── Client-side validation ──
@@ -241,10 +243,6 @@ form?.addEventListener("submit", async (e) => {
   if (!WALLET_REGEX.test(wallet)) {
     showMessage("Invalid wallet address. Format: 0x followed by 40 hex characters.", "error");
     document.getElementById("wallet").focus();
-    return;
-  }
-  if (!confirmed) {
-    showMessage("Please confirm you've completed all tasks first!", "error");
     return;
   }
 
