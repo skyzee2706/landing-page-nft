@@ -188,7 +188,7 @@ function checkTasksAndUnlock() {
     if (submitBtn) {
       submitBtn.disabled = false;
       const btnText = submitBtn.querySelector(".btn-text");
-      if (btnText) btnText.textContent = "Submit for GTD Whitelist 🛸";
+      if (btnText) btnText.textContent = "Submit Whitelist Application 🛸";
     }
   }
 }
@@ -281,7 +281,7 @@ form?.addEventListener("submit", async (e) => {
   }
 
   submitBtn.disabled = false;
-  submitBtn.querySelector(".btn-text").textContent = "Submit for GTD Whitelist 🛸";
+  submitBtn.querySelector(".btn-text").textContent = "Submit Whitelist Application 🛸";
 });
 
 function showMessage(text, type) {
