@@ -3,7 +3,7 @@
    ========================================== */
 
 // ── CONFIG ──────────────────────────────────
-const TWEET_URL = "https://twitter.com/ChilliensNFT";
+const TWEET_URL = "https://x.com/ChilliensNFT/status/2090518856523800791?s=20";
 // Set mint date here (YYYY, MonthIndex 0-11, DD, HH, MM, SS)
 const MINT_DATE = new Date(2026, 8, 15, 20, 0, 0); // 15 Sep 2026, 20:00
 
